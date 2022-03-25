@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: '81e28c07-b5fd-40c7-8899-03a822af4016'
   imageRepository: 'imageforartifacts'
   containerRegistry: 'newacr100.azurecr.io'
-  dockerfilePath: '**/Dockerfile.dckerfile'
+  dockerfilePath: '**/Dockerfile.dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'newacr10017560847-auth'
 
