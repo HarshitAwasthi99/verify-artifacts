@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: imageforartifacts 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: imageforartifacts
+  template:
+    metadata:
+      labels:
+        app: imageforartifacts 
+    spec:
+      containers:
+        - name: imageforartifacts 
+          image: newacr100.azurecr.io/imageforartifacts
+          ports:
+          - containerPort: 80
